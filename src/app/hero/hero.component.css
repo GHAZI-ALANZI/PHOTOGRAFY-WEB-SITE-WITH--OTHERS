@@ -1,7 +1,38 @@
-.text-color {
-    color: rgb(92, 83, 83)
-}
-
-.text-color2 {
-    color: rgb(87, 80, 80);
-}
+    .text-color {
+        color: white;
+    }
+    
+    .text-color2 {
+        color: rgb(165, 160, 160);
+    }
+    
+    .btn-style {
+        background-color: rgb(131, 130, 130);
+        border-color: black;
+        width: fit-content;
+    }
+    
+    .btn-style:hover {
+        background-color: rgb(51, 49, 49);
+        color: lightgray;
+        border-color: lightgray;
+    }
+    
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src/assets/img/hero.jpg");
+        height: 60vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .position {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
