@@ -4,15 +4,15 @@
             <label for="exampleFormControlInput1" class="form-label">First Name</label>
             <input type="text" formControlName="firstName" class="form-control " id="exampleFormControlInput1 " placeholder=" Your First Name ">
             <label for="exampleFormControlInput1 " class="form-label ">Last Name</label>
-            <input type="text " class="form-control " id="exampleFormControlInput1 " placeholder=" Your Last Name ">
+            <input type="text" formControlName="lastName" class="form-control " id="exampleFormControlInput1 " placeholder=" Your Last Name ">
             <label for="exampleFormControlInput1 " class="form-label ">Email address</label>
-            <input type="email " formControlName="email " class="form-control " id="exampleFormControlInput1 " placeholder=" Your Email ">
+            <input type="email" formControlName="email" class="form-control " id="exampleFormControlInput1 " placeholder=" Your Email ">
         </form>
     </div>
     <div class="mb-3 ">
         <label for="exampleFormControlTextarea1 " class="form-label ">Message</label>
         <textarea class="form-control " id="exampleFormControlTextarea1 " rows="7 " placeholder=" Max 250 Letters.. " onKeyPress="if(this.value.length==250) return false; "></textarea>
-        <button class=" btn btn-primary mt-2 " type="submit " (click)=" onSumbit() ">Submit </button>
+        <button class=" btn btn-primary mt-2 " type="submit " (click)=" onSubmit() ">Submit </button>
 
     </div>
 </div>

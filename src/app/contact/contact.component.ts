@@ -24,8 +24,12 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
     
   }
-onSumbit(){
+onSubmit(){
+  if(this.myForm.valid){
   alert("Your message was sent successfully!")
-}
+  console.log("worked")
+} else {
+  console.log("didn't work")
+}}
 
 }
