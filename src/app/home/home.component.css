@@ -1,0 +1,39 @@
+.box-height {
+    height: 45vh;
+}
+
+.opacity-style {
+    background-color: rgba(114, 106, 106, 0.199);
+    box-shadow: 7px 10px 17px -6px rgba(255, 255, 255, 0.75);
+    color: white;
+    animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.text-size {
+    font-family: 'Rouge Script', cursive;
+}
+
+.bg-color {
+    background-color: rgba(253, 239, 239, 0.473);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
