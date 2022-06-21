@@ -8,7 +8,7 @@
 }
 
 .nav-link-user {
-    animation: backgroundAnimation 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: backgroundAnimation 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 @keyframes backgroundAnimation {
@@ -29,6 +29,6 @@
 .nav-link-user:hover {
     font-size: 1.1rem;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    box-shadow: 4px 4px 20px 2px #fbfafa;
-    background-color: #f90c0c;
+    /* box-shadow: 4px 4px 20px 2px #fbfafa; */
+    /* background-color: #f90c0c; */
 }
