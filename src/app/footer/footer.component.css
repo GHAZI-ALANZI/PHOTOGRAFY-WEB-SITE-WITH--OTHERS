@@ -1,5 +1,4 @@
 .icon-user {
-    margin-left: 2%;
     color: aliceblue;
     font-family: 'Rouge Script', cursive;
     font-size: 4vw;
@@ -15,18 +14,18 @@
 }
 
 .imgF-user {
-    width: 6.5%;
-    height: 7%;
+    max-width: 12vw;
+    max-height: 13vh;
 }
 
 .imgI-user {
-    width: 5%;
-    height: 5%;
+    max-width: 9vw;
+    max-height: 9vh;
 }
 
 .imgT-user {
-    width: 7%;
-    height: 7%;
+    max-width: 11vw;
+    max-height: 12vh;
 }
 
 @keyframes gradientChang {
