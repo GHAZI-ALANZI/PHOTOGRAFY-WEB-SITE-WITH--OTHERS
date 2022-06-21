@@ -1,1 +1,18 @@
-<p>swiper works!</p>
+<div class="container">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div *ngFor="let img of data.hits" class="swiper-slide">
+        <img src="{{img.webformatURL}}" />
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div thumbsSlider="" class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div *ngFor="let img of data.hits" class="swiper-slide">
+        <img src="{{img.webformatURL}}" />
+      </div>
+    </div>
+  </div>
+</div>
