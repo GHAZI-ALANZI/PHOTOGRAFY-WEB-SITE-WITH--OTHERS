@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { SweetalertComponent } from './sweetalert/sweetalert.component';
 import { SwiperModule } from 'swiper/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     SwiperModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

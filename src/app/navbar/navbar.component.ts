@@ -22,14 +22,7 @@ export class NavbarComponent implements OnInit {
     ` + `<div class="form-floating mb-3">
     <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
     <label for="floatingPassword">Password</label>
-  </div>`,
-  confirmButtonText: "Sign me up, Scotty!"
-    }).then((result)=>{
-      if (result.value) {
-        Swal.fire(
-          ""
-        )
-      }
+  </div>`
     })
   }
   
