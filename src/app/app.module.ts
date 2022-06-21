@@ -15,7 +15,6 @@ import { SwiperComponent } from './swiper/swiper.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { SweetalertComponent } from './sweetalert/sweetalert.component';
-import { SwiperModule } from 'swiper/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
 
@@ -39,7 +38,6 @@ import { HttpClientModule } from '@angular/common/http'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule,
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule
