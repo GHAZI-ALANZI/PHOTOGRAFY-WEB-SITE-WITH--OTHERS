@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
  
     lastName: new FormControl('',Validators.required),
     
-    email:new FormControl('',Validators.required)
+    email:new FormControl('',[Validators.required, Validators.email])
  
   });
   
@@ -25,7 +25,7 @@ export class ContactComponent implements OnInit {
     
   }
 onSumbit(){
-  alert("your message sent successfully")
+  alert("Your message was sent successfully!")
 }
 
 }
