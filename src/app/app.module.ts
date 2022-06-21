@@ -16,6 +16,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { SweetalertComponent } from './sweetalert/sweetalert.component';
 import { SwiperModule } from 'swiper/angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { SwiperModule } from 'swiper/angular';
     BrowserModule,
     AppRoutingModule,
     SwiperModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
