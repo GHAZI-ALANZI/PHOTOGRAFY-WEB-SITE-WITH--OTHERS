@@ -17,3 +17,7 @@ body {
 .border-style {
     border: none;
 }
+
+.font-style {
+    font-family: 'Rouge Script', cursive;
+}

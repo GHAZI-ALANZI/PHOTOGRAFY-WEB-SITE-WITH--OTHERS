@@ -7,13 +7,14 @@
     }
     
     .btn-style {
-        background-color: rgb(131, 130, 130);
-        border-color: black;
+        background-color: none;
+        color: white;
+        border-color: rgb(43, 41, 41);
         width: fit-content;
     }
     
     .btn-style:hover {
-        background-color: rgb(51, 49, 49);
+        background-color: rgb(51, 49, 49, 0.3);
         color: lightgray;
         border-color: lightgray;
     }
