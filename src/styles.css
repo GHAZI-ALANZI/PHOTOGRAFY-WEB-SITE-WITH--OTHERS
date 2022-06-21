@@ -1,5 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-
-body {
-    background-color: rgb(85, 76, 76);
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
