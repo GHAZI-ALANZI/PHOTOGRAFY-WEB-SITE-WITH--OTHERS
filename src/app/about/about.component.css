@@ -20,4 +20,10 @@ body {
 
 .font-style {
     font-family: 'Rouge Script', cursive;
+    font-size: 50px;
+}
+
+.text-bg {
+    background-color: gray;
+    color: white
 }
