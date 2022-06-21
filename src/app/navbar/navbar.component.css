@@ -1,4 +1,38 @@
 .img-user {
-    width: 8rem;
-    height: 6rem;
+    max-width: 7vw;
+    max-height: 10vh;
+}
+
+.container-user {
+    background: linear-gradient(24deg, rgba(73, 44, 93, 1) 8%, rgba(40, 30, 47, 1) 23%, rgba(42, 34, 26, 1) 41%, rgba(88, 76, 59, 1) 48%, rgba(0, 0, 0, 1) 52%, rgba(45, 41, 110, 1) 63%, rgba(22, 20, 101, 1) 74%, rgba(3, 3, 93, 1) 75%, rgba(182, 164, 142, 1) 92%, rgba(255, 242, 229, 1) 100%, rgba(149, 129, 109, 1) 100%);
+}
+
+.nav-link-user {
+    animation: backgroundAnimation 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(800px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.nav-link-user:hover {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    /* box-shadow: 4px 4px 20px 2px #fbfafa; */
+    /* background-color: #f90c0c; */
+}
+
+a {
+    cursor: pointer;
 }

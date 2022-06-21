@@ -1,3 +1,29 @@
+body {
+    background-color: rgb(85, 76, 76);
+}
+
 .bg-color {
+    background-color: rgb(85, 76, 76);
+}
+
+.viewheight {
+    height: 100vh;
+}
+
+.bg-change {
+    background-color: rgb(85, 76, 76);
+}
+
+.border-style {
+    border: none;
+}
+
+.font-style {
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px;
+}
+
+.text-bg {
     background-color: gray;
+    color: white
 }

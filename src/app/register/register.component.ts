@@ -12,38 +12,65 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-confirmBox() {
-  Swal.fire({
-    title: 'Are you sure want to remove?',
-    text: 'You will not be able to recover this file!',
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonText: 'Yes, delete it!',
-    cancelButtonText: 'No, keep it',
-  }).then((result) => {
-    if (result.value) {
-      Swal.fire(
-        'Deleted!',
-        'Your imaginary file has been deleted.',
-        'success'
-      );
-    } else if (result.dismiss === Swal.DismissReason.cancel) {
-      Swal.fire('Cancelled', 'Your imaginary file is safe :)', 'error');
-    }
-  });
-}
+
 login(){
   Swal.fire({
     title:"Login",
+    html:`<div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  ` + `<div class="form-floating mb-3">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>`,
+confirmButtonText: "Sign me up, Scotty!"
+  }).then((result)=>{
+    if (result.value) {
+      Swal.fire(
+        ""
+      )
+    }
+  })
+}
+
+register(){
+  Swal.fire({
+    title:"Register",
     html:
+    `<div class="input-group">
+    <div class="form-floating mb-3">
+    <input type="fName" class="form-control" id="floatingInput" placeholder="First Name">
+    <label for="floatingInput">First Name</label></div>
+    <div class="form-floating mb-3">
+    <input type="lName" class="form-control" id="floatingInput" placeholder="Last Name">
+    <label for="floatingInput">Last Name</label></div>
+  </div>
+  ` +
     `<div class="form-floating mb-3">
     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
     <label for="floatingInput">Email address</label>
   </div>
-  ` + `<div class="form-floating">
+  ` + `<div class="form-floating mb-3">
   <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
   <label for="floatingPassword">Password</label>
-</div>` + ``
+</div>` + `<div class="form-floating mb-3">
+<input type="date" class="form-control" id="floatingInput" placeholder="Your birthday">
+<label for="floatingInput">Date of birth</label>
+</div>`,
+showCancelButton: true,
+confirmButtonText: 'Register me, bebe!',
+cancelButtonText: 'I changed my mind',
+  }).then((result) => {
+    if (result.value) {
+      Swal.fire(
+        "You're registered!",
+        "Enjoy the content :)",
+        "success"
+      );
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+      Swal.fire("Cancelled", "If you ever change your mind you know where to find me.", "error");
+    }
   })
 }
 }
