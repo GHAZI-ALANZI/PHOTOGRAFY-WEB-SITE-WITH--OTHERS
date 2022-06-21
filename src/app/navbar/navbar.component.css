@@ -1,6 +1,6 @@
 .img-user {
-    width: 8rem;
-    height: 6rem;
+    max-width: 7vw;
+    max-height: 10vh;
 }
 
 .container-user {
