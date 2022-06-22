@@ -1,7 +1,18 @@
+:root {
+    --swiperWidth: 30vw;
+    --swiperHeight: var(--swiperWidth);
+}
+
 .background {
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     z-index: -10;
+}
+
+@media screen and (max-width: 650px) {
+    :root {
+        --swiperHeight: 50vh;
+    }
 }
