@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { SweetalertComponent } from './sweetalert/sweetalert.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AwardComponent } from './award/award.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     HomeComponent,
     SweetalertComponent,
+    AwardComponent,
   ],
   imports: [
     BrowserModule,

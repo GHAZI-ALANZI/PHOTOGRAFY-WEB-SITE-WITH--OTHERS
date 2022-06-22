@@ -1,0 +1,52 @@
+.img-award {
+    min-width: 40vw;
+    max-width: 40vw;
+    margin-left: 30vw;
+    animation: bg-top-left 5s ease-out both;
+}
+
+.card {
+    border-style: none;
+}
+
+.card-award-0 {
+    animation: text-focus-in 2.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    font-family: 'Rouge Script', cursive;
+    font-size: 4rem;
+}
+
+.card-award-1 {
+    animation: text-focus-in 2.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.card-award-2 {
+    animation: text-focus-in 2.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.card-award-3 {
+    animation: text-focus-in 2.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes bg-top-left {
+    0% {
+        transform: scale(1) translate(0, 0);
+        transform-origin: 16% 16%;
+    }
+    100% {
+        transform: scale(1.1) translate(-20px, -15px);
+        transform-origin: top left;
+    }
+}
