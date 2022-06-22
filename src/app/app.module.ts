@@ -18,6 +18,8 @@ import { SweetalertComponent } from './sweetalert/sweetalert.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SwiperModule } from 'swiper/angular';
+import { AwardComponent } from './award/award.component';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { SwiperModule } from 'swiper/angular';
     ContactComponent,
     HomeComponent,
     SweetalertComponent,
+    AwardComponent,
   ],
   imports: [
     BrowserModule,

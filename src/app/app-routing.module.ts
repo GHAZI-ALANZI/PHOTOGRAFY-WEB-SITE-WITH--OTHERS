@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { AwardComponent } from './award/award.component';
 import { ContactComponent } from './contact/contact.component';
 import { GalleryAlbumComponent } from './gallery-album/gallery-album.component';
 import { GalleryPhotoComponent } from './gallery-photo/gallery-photo.component';
@@ -22,6 +23,8 @@ const routes: Routes = [{
   path:"gallery", component: GalleryAlbumComponent
 },{
   path:"photos",component: GalleryPhotoComponent
+},{
+  path:"award", component: AwardComponent
 }];
 
 @NgModule({
