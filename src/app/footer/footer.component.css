@@ -3,34 +3,38 @@
     font-family: 'Rouge Script', cursive;
     font-size: 2.5vw;
     font-weight: bolder;
-    margin-left: 13vw;
-    margin-right: 15vw;
+    margin-left: 7vw;
+    margin-right: 9vw;
 }
 
 .footer-user {
-    /* position: relative; */
+    /* position: relative;
     bottom: 0;
     background: linear-gradient(24deg, rgba(73, 44, 93, 1) 8%, rgba(40, 30, 47, 1) 23%, rgba(42, 34, 26, 1) 41%, rgba(88, 76, 59, 1) 48%, rgba(0, 0, 0, 1) 52%, rgba(45, 41, 110, 1) 63%, rgba(22, 20, 101, 1) 74%, rgba(3, 3, 93, 1) 75%, rgba(182, 164, 142, 1) 92%, rgba(255, 242, 229, 1) 100%, rgba(149, 129, 109, 1) 100%);
     background-size: 300% 200%;
-    animation: gradientChang 7s ease infinite;
+    animation: gradientChang 7s ease infinite; */
+    background: rgb(170, 170, 170);
+    background: linear-gradient(0deg, rgba(170, 170, 170, 0.57) 0%, rgba(170, 170, 170, 0.5662464815027574) 55%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(15px);
 }
 
 .imgF-user {
-    max-width: 9vw;
-    max-height: 11vh;
+    max-width: 7vw;
+    max-height: 9vh;
 }
 
 .imgI-user {
     max-width: 7vw;
-    max-height: 8vh;
+    max-height: 9vh;
 }
 
 .imgT-user {
-    max-width: 8vw;
-    max-height: 8vh;
+    max-width: 7vw;
+    max-height: 9vh;
 }
 
-@keyframes gradientChang {
+
+/* @keyframes gradientChang {
     0% {
         background-position: 0% 10%;
     }
@@ -40,4 +44,4 @@
     100% {
         background-position: 0% 50%;
     }
-}
+} */
