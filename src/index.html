@@ -24,10 +24,15 @@
         $(document).ready(function() {
             const swiper2 = new Swiper(".mySwiper2", {
                 spaceBetween: 10,
-                slidesPerView: 5,
+                slidesPerView: 3,
                 freeMode: true,
                 watchSlidesProgress: true,
                 loop: true,
+                breakpoints: {
+                    650: {
+                        slidesPerView: 5,
+                    },
+                },
             });
 
             const swiper = new Swiper(".mySwiper", {
