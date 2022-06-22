@@ -30,7 +30,7 @@ export class NavbarComponent implements OnInit {
     Swal.fire({
       title:"Register",
       html:
-      `<div class="input-group">
+      `<div class="input-group d-flex justify-content-between">
       <div class="form-floating mb-3">
       <input type="fName" class="form-control" id="floatingInput" placeholder="First Name">
       <label for="floatingInput">First Name</label></div>
