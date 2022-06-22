@@ -3,6 +3,12 @@
     --swiperHeight: var(--swiperWidth);
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 .background {
     position: absolute;
     display: block;
