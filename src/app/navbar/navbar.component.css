@@ -1,6 +1,6 @@
 .img-user {
-    max-width: 3vw;
-    max-height: 5vh;
+    width: 40px;
+    /* max-height: 5vh; */
 }
 
 .container-user {
