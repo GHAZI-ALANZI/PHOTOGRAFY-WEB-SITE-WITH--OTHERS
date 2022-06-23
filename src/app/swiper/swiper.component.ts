@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SwiperModule } from 'swiper/angular';
 import { PixapiService } from '../pixapi.service';
 import SwiperCore, { Swiper, Virtual, Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Thumbs, FreeMode, Manipulation } from 'swiper';
+import { ActivatedRoute, Params, Router, ParamMap } from '@angular/router'
 SwiperCore.use([Virtual, Navigation, Pagination, Scrollbar, A11y, EffectCoverflow, Thumbs, FreeMode, Manipulation ]);
 
 @Component({
@@ -11,15 +12,23 @@ SwiperCore.use([Virtual, Navigation, Pagination, Scrollbar, A11y, EffectCoverflo
 })
 export class SwiperComponent implements OnInit {
 
+  filter: string = ""; 
+
   data: any = [];
-  constructor(private api: PixapiService) {
-    this.api.getData().subscribe(data => {
+  constructor(private api: PixapiService, private aRoute: ActivatedRoute, private route: Router) {
+
+    this.aRoute.params.subscribe(params => {
+      this.filter = params["filter"];
+      console.log(this.filter);
+    });
+
+    this.api.getData(this.filter).subscribe(data => {
       this.data = data;
-      // console.log(this.data.hits[0].webformatURL);
     })
   }
 
   ngOnInit(): void {
+
     setTimeout(function(){
       const swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
@@ -59,7 +68,7 @@ export class SwiperComponent implements OnInit {
             swiper: swiper2,
         },
     });
-    },100)
+    },300)
       
   
    

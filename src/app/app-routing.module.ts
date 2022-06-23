@@ -22,7 +22,7 @@ const routes: Routes = [{
 },{
   path:"gallery", component: GalleryAlbumComponent
 },{
-  path:"photos",component: GalleryPhotoComponent
+  path:"photos/:filter",component: GalleryPhotoComponent
 },{
   path:"award", component: AwardComponent
 }];
