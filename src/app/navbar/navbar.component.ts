@@ -51,8 +51,8 @@ export class NavbarComponent implements OnInit {
   <label for="floatingInput">Date of birth</label>
   </div>`,
   showCancelButton: true,
-  confirmButtonText: 'Register me, bebe!',
-  cancelButtonText: 'I changed my mind',
+  confirmButtonText: 'Register',
+  cancelButtonText: 'Cancel',
     }).then((result) => {
       if (result.value) {
         Swal.fire(
