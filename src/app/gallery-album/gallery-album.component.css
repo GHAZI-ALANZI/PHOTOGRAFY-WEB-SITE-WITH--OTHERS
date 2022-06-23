@@ -25,6 +25,7 @@ h1 {
 .container-gallery {
     position: relative;
     width: 100%;
+    transition: 0.5s ease;
 }
 
 .image {
@@ -44,6 +45,10 @@ h1 {
     opacity: 0;
     transition: 0.5s ease;
     background-color: black;
+}
+
+.container-gallery:hover {
+    transform: scale(1.05);
 }
 
 .container-gallery:hover .overlay {
