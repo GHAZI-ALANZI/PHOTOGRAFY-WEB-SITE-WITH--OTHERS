@@ -19,6 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SwiperModule } from 'swiper/angular';
 import { AwardComponent } from './award/award.component';
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
 
 
 @NgModule({
@@ -46,7 +47,9 @@ import { AwardComponent } from './award/award.component';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {provide : LocationStrategy , useClass: HashLocationStrategy},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -19,7 +19,7 @@ export class SwiperComponent implements OnInit {
 
     this.aRoute.params.subscribe(params => {
       this.filter = params["filter"];
-      console.log(this.filter);
+      // console.log(this.filter);
     });
 
     this.api.getData(this.filter).subscribe(data => {
@@ -68,7 +68,7 @@ export class SwiperComponent implements OnInit {
             swiper: swiper2,
         },
     });
-    },300)
+    },400)
       
   
    
